@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'MarvinVisionsBig';
+  font-style: normal;
+  src:url("/source/font/marvin-visions/MarvinVisionsTrial-Variable.ttf") format("truetype");
+}
+
+
+
+header{
+  height: 180px;
+  background-color: #EFEFEF;
+}
+H2{
+  font-family: 'MarvinVisionsBig';
+  font-weight: 20;
+  font-size: 5em;
+    font-weight: 170;
+  text-align: right;
+  background: yellow;
+
+}
+
+section{
+  width: 65VW;
+  margin: auto;
+  margin-top: 56px;
+}
+
+
+
+#container_letters{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(326px, 1fr)) ;
+  grid-auto-rows: 324px;
+  grid-gap: 40px;
+
+
+}
+.box-filter{
+display: none;
+}
+
+#voyelle:target ~ .consonne{
+  display: none;
+}
+
+#consonne:target ~ .voyelle{
+  display: none;
+}
+
+#all:target ~ .voyelle .consonne{
+  display: block;
+}
+
+#filter-vowel:focus{
+
+  background: red;
+
+
+}
+
+#filter-box{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.filter{
+
+  margin: 0 50px 0 50px;
+  font-family: 'MarvinVisionsBig';
+  font-weight: 20;
+  font-size: 2em;
+  text-decoration: none;
+  color: black;
+}
+
+
+
+/*input[type="radio"][id="filter-vowel"]:checked ~ .consonne{
+  background-color: red;
+}*/
