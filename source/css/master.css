@@ -1,38 +1,86 @@
 @font-face {
   font-family: 'MarvinVisionsBig';
   font-style: normal;
-  src:url("Abcd/source/font/marvin-visions/MarvinVisionsTrial-Variable.ttf") format("truetype");
+  src:url("/source/font/marvin-visions/MarvinVisionsTrial-Variable.ttf") format("truetype");
 }
 
+html{
+  cursor: url("/source/cursor.png"), auto;
+  background: #F6F8F5;
+}
 
 
 header{
   height: 180px;
   background-color: #EFEFEF;
 }
-H2{
+
+a{
+  cursor: url("/source/cursor.png"), auto;
+}
+h2{
+
   font-family: 'MarvinVisionsBig';
   font-weight: 20;
-  font-size: 5em;
-    font-weight: 170;
+  font-size: 150px;
+  -webkit-text-stroke: 3px #2F3E46;
+   -webkit-text-fill-color: #CAD2C5;
+  font-weight: 170;
   text-align: right;
-  background: yellow;
-
+  line-height: 0.8;
 }
 
 section{
   width: 65VW;
   margin: auto;
-  margin-top: 56px;
+  margin-top: 80px;
 }
 
+.letter{
 
+background-color: #CAD2C5;
+border: 3px solid rgba(47, 62, 70, 0.4);
+border-radius: 20px;
+padding: 32px 38px;
+transform: scale(1);
+transition: all 0.4s ease-in-out;
+}
+
+.letter:hover {
+
+transform: scale(1.1);
+background: #2F3E46;
+border: 3px solid rgba(47, 62, 70, 0.4);
+box-sizing: border-box;
+border-radius: 20px;
+
+}
+.letter:hover h3{
+
+}
+.letter:hover .legends{
+color: #F6F8F5;
+}
+.letter:hover .difficulty{
+color: #F6F8F5;
+}
+.letter:hover h2{
+
+  font-family: 'MarvinVisionsBig';
+  font-weight: 20;
+  font-size: 150px;
+   -webkit-text-fill-color: #F6F8F5;
+  font-weight: 170;
+  text-align: right;
+  line-height: 0.8;
+}
 
 #container_letters{
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(326px, 1fr)) ;
   grid-auto-rows: 324px;
   grid-gap: 40px;
+
 
 
 }
@@ -65,20 +113,68 @@ display: none;
   justify-content: center;
   align-items: center;
 
+
+}
+
+#container_letters:hover{
+
+cursor: url("/source/cursor_hover.png"), auto;
+
 }
 
 .filter{
 
-  margin: 0 50px 0 50px;
+  margin: 0 40px 0 40px;
+  padding: 13px 0;
+  text-align: center;
   font-family: 'MarvinVisionsBig';
-  font-weight: 20;
-  font-size: 2em;
+  font-variation-settings: 'opsz' 120, 'wght' 40;
+  font-size: 24px;
   text-decoration: none;
   color: black;
+  width: 192px;
+  height: 55px;
+  background: #CAD2C5;
+  border: 3px solid #8C9792;
+  box-sizing: border-box;
+  border-radius: 36px;
 }
 
+.legends{
 
+  font-family: 'Fieldwork';
+  font-weight: 300;
+  font-size: 16px;
+  color: ##2F3E46, 100%;
+  display: flex;
+  align-items: center;
+  flex-direction:row;
+  justify-content:space-between;
+  margin-top: 32px;
+}
 
+.difficulty{
+
+  font-family: 'Fieldwork';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 113.53%;
+color: #000000;
+margin-top:21px;
+
+}
+
+h3{
+
+font-family: 'Fieldwork';
+font-style: normal;
+font-weight: 600;
+font-size: 24px;
+line-height: 113.53%;
+margin-top: 12px;
+color: #52796F;
+}
 /*input[type="radio"][id="filter-vowel"]:checked ~ .consonne{
   background-color: red;
 }*/
