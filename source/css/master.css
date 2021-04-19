@@ -30,14 +30,9 @@ h2{
   line-height: 0.8;
 }
 
-section{
-  width: 65VW;
-  margin: auto;
-  margin-top: 80px;
-}
+
 
 .letter{
-
 background-color: #CAD2C5;
 border: 3px solid rgba(47, 62, 70, 0.4);
 border-radius: 20px;
@@ -47,7 +42,6 @@ transition: all 0.4s ease-in-out;
 }
 
 .letter:hover {
-
 transform: scale(1.1);
 background: #2F3E46;
 border: 3px solid rgba(47, 62, 70, 0.4);
@@ -80,22 +74,40 @@ color: #F6F8F5;
   grid-template-columns: repeat(auto-fit, minmax(326px, 1fr)) ;
   grid-auto-rows: 324px;
   grid-gap: 40px;
-  
+  width: 65VW;
+  margin: auto;
+  margin-top: 80px;
+
 }
 
 .box-filter{
 display: none;
 }
 
-#voyelle:target ~ .consonne{
+#quickly:target ~ .vegan{
   display: none;
 }
 
-#consonne:target ~ .voyelle{
+#quickly:target ~ .low-budget{
   display: none;
 }
 
-#all:target ~ .voyelle .consonne{
+#low-budget:target ~ .vegan{
+  display: none;
+}
+#low-budget:target ~ .quickly{
+  display: none;
+}
+
+#vegan:target ~ .low-budget {
+  display: none;
+}
+
+#vegan:target ~ .quickly {
+  display: none;
+}
+
+#all:target ~ .low-budget .consonne .vegan{
   display: block;
 }
 
@@ -107,12 +119,10 @@ display: none;
 }
 
 #filter-box{
-
   display: flex;
   justify-content: center;
   align-items: center;
-
-
+  flex-wrap: wrap;
 }
 
 #container_letters:hover{
@@ -131,8 +141,10 @@ cursor: url("/source/cursor_hover.png"), auto;
   font-size: 24px;
   text-decoration: none;
   color: black;
-  width: 192px;
+  margin-top: 24px;
   height: 55px;
+  flex-basis: 192px;
+  flex-shrink: 2;
   background: #CAD2C5;
   border: 3px solid #8C9792;
   box-sizing: border-box;
@@ -174,6 +186,8 @@ line-height: 113.53%;
 margin-top: 12px;
 color: #52796F;
 }
+
+
 /*input[type="radio"][id="filter-vowel"]:checked ~ .consonne{
   background-color: red;
 }*/
