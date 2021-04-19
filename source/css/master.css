@@ -71,7 +71,7 @@ color: #F6F8F5;
 
 #container_letters{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(326px, 1fr)) ;
+  grid-template-columns: repeat(auto-fill, minmax(326px, 1fr)) ;
   grid-auto-rows: 324px;
   grid-gap: 40px;
   width: 65VW;
