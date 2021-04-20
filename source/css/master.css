@@ -18,13 +18,32 @@ html{
 
 
 header{
-  height: 180px;
+  height: 80px;
   background-color: #EFEFEF;
 }
 
 a{
   cursor: url("/source/cursor.png"), auto;
 }
+
+h1{
+font-family: 'MarvinVisionsBig';
+font-size: 80px;
+line-height: 96px;
+color: #2F3E46;
+font-variation-settings: 'opsz' 180, 'wght' 170;
+letter-spacing: 0.035em;
+
+}
+
+#stroke-title{
+  font-family: 'MarvinVisionsBig';
+  font-size: 90px;
+  font-variation-settings: 'opsz' 120, 'wght' 110;
+  -webkit-text-stroke: 3px #52796F;
+   -webkit-text-fill-color: #F6F8F5;
+}
+
 h2{
 
   font-family: 'MarvinVisionsBig';
@@ -37,6 +56,25 @@ h2{
   line-height: 0.8;
 }
 
+#hero{
+  height: 435px;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+.hero-right > img{
+
+  width : 534px;
+  height: auto;
+}
+
+.hero-left{
+margin-right: 18%;
+
+}
 
 
 .letter{
@@ -113,7 +151,7 @@ display: none;
   display: none;
 }
 
-#all:target ~ .low-budget .consonne .vegan{
+#all:target ~ .low-budget .quickly .vegan{
   display: block;
 }
 
@@ -129,6 +167,7 @@ display: none;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 180px;
 }
 
 #container_letters:hover{
