@@ -1,19 +1,24 @@
 @font-face {
   font-family: 'MarvinVisionsBig';
   font-style: normal;
-  src:url("/source/font/marvin-visions/MarvinVisionsTrial-Variable.ttf") format("truetype");
+  src:url("/sources/fonts/marvin-visions/MarvinVisionsTrial-Variable.ttf") format("truetype");
 }
 
 @font-face {
   font-family: 'Fieldwork';
   font-style: normal;
-  src:url("/source/font/Fieldwork10-GeoRegular.otf") format("truetype");
+  src:url("/sources/fonts/Fieldwork10-GeoRegular.otf") format("truetype");
 }
 
+:root {
+  --bg-color: #F6F8F5;
+  --main-card-color:#CAD2C5 ;
+  --secondary-color:#2F3E46 ;
+}
 
 html{
-  cursor: url("/source/cursor.png"), auto;
-  background: #F6F8F5;
+  cursor: url("/sources/images/cursor.png"), auto;
+  background: var(--bg-color);
 }
 
 
@@ -23,14 +28,14 @@ header{
 }
 
 a{
-  cursor: url("/source/cursor.png"), auto;
+  cursor: url("/sources/images/cursor.png"), auto;
 }
 
 h1{
 font-family: 'MarvinVisionsBig';
 font-size: 80px;
 line-height: 96px;
-color: #2F3E46;
+color: var(--secondary-color);
 font-variation-settings: 'opsz' 180, 'wght' 170;
 letter-spacing: 0.035em;
 
@@ -41,20 +46,10 @@ letter-spacing: 0.035em;
   font-size: 90px;
   font-variation-settings: 'opsz' 120, 'wght' 110;
   -webkit-text-stroke: 3px #52796F;
-   -webkit-text-fill-color: #F6F8F5;
+   -webkit-text-fill-color: var(--bg-color);
 }
 
-h2{
 
-  font-family: 'MarvinVisionsBig';
-  font-weight: 20;
-  font-size: 150px;
-  -webkit-text-stroke: 3px #2F3E46;
-   -webkit-text-fill-color: #CAD2C5;
-  font-weight: 170;
-  text-align: right;
-  line-height: 0.8;
-}
 
 #hero{
   margin-top: 50px;
@@ -76,43 +71,7 @@ margin-right: 18%;
 
 }
 
-
-.letter{
-background-color: #CAD2C5;
-border: 3px solid rgba(47, 62, 70, 0.4);
-border-radius: 20px;
-padding: 32px 38px;
-transform: scale(1);
-transition: all 0.4s ease-in-out;
-}
-
-.letter:hover {
-transform: scale(1.1);
-background: #2F3E46;
-border: 3px solid rgba(47, 62, 70, 0.4);
-box-sizing: border-box;
-border-radius: 20px;
-
-}
-.letter:hover h3{
-
-}
-.letter:hover .legends{
-color: #F6F8F5;
-}
-.letter:hover .difficulty{
-color: #F6F8F5;
-}
-.letter:hover h2{
-
-  font-family: 'MarvinVisionsBig';
-  font-weight: 20;
-  font-size: 150px;
-   -webkit-text-fill-color: #F6F8F5;
-  font-weight: 170;
-  text-align: right;
-  line-height: 0.8;
-}
+/*CSS to manage filter and their style */
 
 #container_letters{
   display: grid;
@@ -156,10 +115,7 @@ display: none;
 }
 
 #filter-vowel:focus{
-
   background: red;
-
-
 }
 
 #filter-box{
@@ -171,13 +127,10 @@ display: none;
 }
 
 #container_letters:hover{
-
-cursor: url("/source/cursor_hover.png"), auto;
-
+cursor: url("/sources/images/cursor_hover.png"), auto;
 }
 
 .filter{
-
   margin: 0 40px 0 40px;
   padding: 13px 0;
   text-align: center;
@@ -190,24 +143,68 @@ cursor: url("/source/cursor_hover.png"), auto;
   height: 55px;
   flex-basis: 192px;
   flex-shrink: 2;
-  background: #CAD2C5;
+  background: var(--main-card-color);
   border: 3px solid #8C9792;
   box-sizing: border-box;
   border-radius: 36px;
 }
 
-.legends{
+/*End to manage filter and their style */
 
-  font-family: 'Fieldwork';
-  font-weight: 300;
-  font-size: 16px;
-  color: ##2F3E46, 100%;
-  display: flex;
-  align-items: center;
-  flex-direction:row;
-  justify-content:space-between;
-  margin-top: 32px;
+/*Styling cards withs letters */
+
+h2{
+  font-family: 'MarvinVisionsBig';
+  font-weight: 20;
+  font-size: 150px;
+  -webkit-text-stroke: 3px var(--secondary-color);
+   -webkit-text-fill-color: var(--main-card-color);
+  font-weight: 170;
+  text-align: right;
+  line-height: 0.8;
 }
+
+.letter{
+background-color: var(--main-card-color);
+border: 3px solid rgba(47, 62, 70, 0.4);
+border-radius: 20px;
+padding: 32px 38px;
+transform: scale(1);
+transition: all 0.4s ease-in-out;
+}
+
+/*styling cards hover */
+
+.letter:hover {
+transform: scale(1.1);
+background: var(--secondary-color);
+border: 3px solid rgba(47, 62, 70, 0.4);
+box-sizing: border-box;
+border-radius: 20px;
+}
+
+.letter:hover .legends{
+color: #F6F8F5;
+}
+
+.letter:hover .difficulty{
+color: #F6F8F5;
+}
+
+.letter:hover h2{
+  font-family: 'MarvinVisionsBig';
+  font-weight: 20;
+  font-size: 150px;
+   -webkit-text-fill-color: #F6F8F5;
+  font-weight: 170;
+  text-align: right;
+  line-height: 0.8;
+}
+/*End styling cards hover */
+/*End styling cards withs letters */
+
+
+
 
 .difficulty{
 
@@ -232,7 +229,15 @@ margin-top: 12px;
 color: #52796F;
 }
 
+.legends{
 
-/*input[type="radio"][id="filter-vowel"]:checked ~ .consonne{
-  background-color: red;
-}*/
+  font-family: 'Fieldwork';
+  font-weight: 300;
+  font-size: 16px;
+  color: #var(--secondary-color), 100%;
+  display: flex;
+  align-items: center;
+  flex-direction:row;
+  justify-content:space-between;
+  margin-top: 32px;
+}
