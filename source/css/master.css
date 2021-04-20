@@ -4,6 +4,13 @@
   src:url("/source/font/marvin-visions/MarvinVisionsTrial-Variable.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: 'Fieldwork';
+  font-style: normal;
+  src:url("/source/font/Fieldwork10-GeoRegular.otf") format("truetype");
+}
+
+
 html{
   cursor: url("/source/cursor.png"), auto;
   background: #F6F8F5;
