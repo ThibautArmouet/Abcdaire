@@ -31,6 +31,8 @@ a{
   cursor: url("/sources/images/cursor.png"), auto;
 }
 
+/*CSS to style the hero */
+
 h1{
 font-family: 'MarvinVisionsBig';
 font-size: 80px;
@@ -70,6 +72,8 @@ letter-spacing: 0.035em;
 margin-right: 18%;
 
 }
+
+/*End CSS to style the hero */
 
 /*CSS to manage filter and their style */
 
