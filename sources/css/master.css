@@ -19,16 +19,51 @@
 html{
   cursor: url("/sources/images/cursor.png"), auto;
   background: var(--bg-color);
+  scroll-behavior: smooth;
 }
 
 
+
+#global-container{
+display: grid;
+grid-template-columns: 5% 90% 5%;
+grid-auto-rows: auto;
+
+}
+
 header{
-  height: 80px;
-  background-color: #EFEFEF;
+  height: 87px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  grid-column-start:2;
+  grid-row-start:1;
+  border: solid 1px #52796F;
+}
+
+#burger-menu{
+  grid-column-start:3;
+  grid-row-start:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: solid 1px #52796F;
+  border-right: solid 1px #52796F;
+  border-bottom: solid 1px #52796F;
+}
+
+header h4{
+font-family: 'Fieldwork';
+font-style: 100;
+font-weight: lighter;
+font-size: 18px;
+line-height: 25px;
+margin: auto;
 }
 
 a{
   cursor: url("/sources/images/cursor.png"), auto;
+  text-decoration: none;
 }
 
 /*CSS to style the hero */
@@ -43,6 +78,29 @@ letter-spacing: 0.035em;
 
 }
 
+#hero_coffee{
+  position: absolute;
+  width: 274px;
+  height: auto;
+  z-index: 1;
+  top:497px;
+  left:187px;
+}
+
+
+#satelite{
+  position: absolute;
+  left:-30px;
+  top: 248px;
+  font-family: Fieldwork;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #2F3E46;
+  transform: rotate(-90deg);
+}
+
 #stroke-title{
   font-family: 'MarvinVisionsBig';
   font-size: 90px;
@@ -54,11 +112,15 @@ letter-spacing: 0.035em;
 
 
 #hero{
-  margin-top: 50px;
+  padding-top: 88px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap-reverse;
+  grid-column-start:2;
+  grid-row-start:2;
+  border-right: solid 1px #52796F;
+  border-left: solid 1px #52796F;
 }
 
 .hero-right > img{
@@ -66,13 +128,31 @@ letter-spacing: 0.035em;
   width : 534px;
   height: auto;
   flex-shrink: 3;
+  z-index: 99;
 }
 
 .hero-left{
 margin-right: 18%;
+z-index: 99;
 
 }
 
+#cta_anchor{
+font-family: Fieldwork;
+font-style: normal;
+font-weight: normal;
+font-size: 24px;
+line-height: 34px;
+display: flex;
+text-decoration: none;
+padding-top:221px;
+justify-content: center;
+align-items: center;
+grid-column-start:2;
+grid-row-start:3;
+border-right: solid 1px #52796F;
+border-left: solid 1px #52796F;
+}
 /*End CSS to style the hero */
 
 /*CSS to manage filter and their style */
@@ -83,8 +163,15 @@ margin-right: 18%;
   grid-auto-rows: 324px;
   grid-gap: 40px;
   width: 65VW;
-  margin: auto;
-  margin-top: 80px;
+  justify-content: center;
+  align-items: center;
+  grid-column-start:2;
+  grid-row-start:5;
+  border-right: solid 1px #52796F;
+  border-left: solid 1px #52796F;
+  place-self: center;
+  padding: 80px 13.8%;
+
 }
 
 .box-filter{
@@ -118,16 +205,17 @@ display: none;
   display: block;
 }
 
-#filter-vowel:focus{
-  background: red;
-}
 
 #filter-box{
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 180px;
+  padding-top: 238px;
+  grid-column-start:2;
+  grid-row-start:4;
+  border-right: solid 1px #52796F;
+  border-left: solid 1px #52796F;
 }
 
 #container_letters:hover{
