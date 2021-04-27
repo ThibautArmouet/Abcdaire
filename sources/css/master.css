@@ -316,6 +316,7 @@ h2{
   font-weight: 170;
   text-align: right;
   line-height: 0.8;
+  z-index: 999;
 }
 
 .letter{
@@ -394,4 +395,15 @@ color: #52796F;
   flex-direction:row;
   justify-content:space-between;
   margin-top: 32px;
+}
+
+/* CSS to style footer*/
+
+
+footer{
+
+  display: flex;
+  justify-content:space-between;
+  border: solid 1px #52796F;
+  padding: 62px;
 }
