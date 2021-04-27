@@ -19,7 +19,7 @@ transform: translateY(0);
 }
 
 .letter:hover .card-svg {
-    opacity: 100%;
+  opacity: 100%;
   stroke-dasharray: 1000;
   stroke-dashoffset: 1000;
   animation: dash 2s ease-in-out  forwards;
