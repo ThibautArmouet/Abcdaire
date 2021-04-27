@@ -25,6 +25,7 @@ html{
   cursor: url("/sources/images/cursor.png"), auto;
   background: var(--bg-color);
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 
@@ -55,7 +56,7 @@ header{
   width: 330px;
   height: 100%;
   background-color: var(--secondary-color);
-  transition: all 0.5s linear;
+  transition: right 0.5s ease-in-out;
   z-index: 999;
   padding: 30px;
 }
@@ -91,9 +92,7 @@ line-height: 25px;
 margin: auto;
 }
 
-
-
-a:nth-child(1){
+#cta_anchor a:nth-child(1){
   transition:.3s all;
   cursor: url("/sources/images/cursor.png"), auto;
   text-decoration: none;
@@ -101,7 +100,7 @@ a:nth-child(1){
     transform: scale(1);
     transition: all 0.4s;
 }
-a:nth-child(1):before,a:nth-child(1):after{
+#cta_anchor a:nth-child(1):before,a:nth-child(1):after{
   content:'';
   position:absolute;
   width:0%;
@@ -109,15 +108,15 @@ a:nth-child(1):before,a:nth-child(1):after{
   transition:.3s all;
 }
 
-a:nth-child(1):after{
+#cta_anchor a:nth-child(1):after{
   right:0;
   border-bottom:2px solid #2F3E46;
 }
-a:nth-child(1):hover{
+#cta_anchor a:nth-child(1):hover{
   font-weight:bold;
   letter-spacing:1px;
 }
-a:nth-child(1):hover:after,a:nth-child(1):hover:before{
+#cta_anchor a:nth-child(1):hover:after,a:nth-child(1):hover:before{
   width:100%;
 }
 
@@ -284,7 +283,7 @@ display: none;
 cursor: url("/sources/images/cursor_hover.png"), auto;
 }
 
-.filter{
+.filter {
   margin: 0 40px 0 40px;
   padding: 13px 0;
   text-align: center;
@@ -301,6 +300,8 @@ cursor: url("/sources/images/cursor_hover.png"), auto;
   border: 3px solid #8C9792;
   box-sizing: border-box;
   border-radius: 36px;
+  cursor: url("/sources/images/cursor.png");
+
 }
 
 /*End to manage filter and their style */
