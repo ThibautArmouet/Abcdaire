@@ -28,6 +28,9 @@ html{
   overflow-x: hidden;
 }
 
+body{
+  overflow-x: hidden;
+}
 
 
 #global-container{
@@ -51,7 +54,6 @@ header{
 
 #container-burger{
   position: absolute;
-  
   top: 0;
   right:-390px;
   width: 330px;
