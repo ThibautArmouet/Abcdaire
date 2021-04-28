@@ -584,7 +584,8 @@ footer a{
   grid-row-start:2;
   display: flex;
   justify-content: center;
-  padding-top:85px;
+  flex-direction: column;
+  padding-top:35px;
   border-right: solid 1px #52796F;
   border-left: solid 1px #52796F;
   animation: content-appear 0.6s ease-in-out ;
@@ -593,10 +594,53 @@ footer a{
   animation-fill-mode: forwards;
 }
 
+
 #recipe-hero img{
   width: 80vw;
   height: auto;
   margin: auto;
+  margin-top: 24px;
+}
+
+#recipe-hero a{
+  font-size: 16px;
+  width: 67px;
+  height: 25px;
+  margin-left: 5%;
+  font-family: 'Fieldwork-light';
+  transition:.3s all;
+  cursor: url("/sources/images/cursor.png"), auto;
+  text-decoration: none;
+  color: #2F3E46;
+  transform: scale(1);
+  transition: all 0.4s;
+}
+#recipe-hero a:before,a:after{
+  content:'';
+  height: 20px;
+  position:absolute;
+  width:0%;
+  height:100%;
+  transition:.3s all;
+}
+
+#recipe-hero a:after{
+  right:0;
+  height: 20px;
+  border-bottom:2px solid #2F3E46;
+}
+#recipe-hero a:hover{
+  font-weight:bold;
+  height: 25px;
+  letter-spacing:1px;
+}
+#recipe-hero a:hover:after,a:hover:before{
+  width:100%;
+  height: 20px;
+}
+
+#recipe-hero a{
+  padding-top: 25px;
 }
 
 #recipe-information{
@@ -771,4 +815,6 @@ margin-bottom: 16px;
   width: 344px;
   height: auto;
 }
+
+
 /*End recipe-pages*/
