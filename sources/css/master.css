@@ -582,13 +582,193 @@ footer a{
 #recipe-hero{
   grid-column-start:2;
   grid-row-start:2;
+  display: flex;
+  justify-content: center;
+  padding-top:85px;
+  border-right: solid 1px #52796F;
+  border-left: solid 1px #52796F;
+  animation: content-appear 0.6s ease-in-out ;
+  animation-delay: 0.32s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
+
+#recipe-hero img{
+  width: 80vw;
+  height: auto;
+  margin: auto;
+}
+
 #recipe-information{
   grid-column-start:2;
-  grid-row-start:2;
+  grid-row-start:3;
+  padding-top: 56px;
+  border-right: solid 1px #52796F;
+  border-left: solid 1px #52796F;
+  padding-left: 8%;
+  animation: content-appear 0.6s ease-in-out ;
+  animation-delay: 0.32s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+
+#recipe-information span{
+  font-family: 'Fieldwork-light';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 113.53%;
+  color: #2F3E46;
+  animation: content-appear 0.6s ease-in-out ;
+  animation-delay: 0.24s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+
+}
+#recipe-information h1 {
+  font-family: 'MarvinVisionsBig';
+  font-size: 60px;
+  line-height: 66px;
+  color: var(--secondary-color);
+  font-variation-settings: 'opsz' 180, 'wght' 170;
+  letter-spacing: 0.035em;
+  animation: content-appear 0.6s ease-in-out ;
+  animation-delay: 0.32s;
+  opacity: 0;
+  animation-fill-mode: forwards;
 }
 
 #recipe{
   grid-column-start:2;
-  grid-row-start:3;
+  grid-row-start:4;
 }
+
+#timing-and-budget{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+#timing-and-budget h3{
+  font-family: "Fieldwork";
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+color: #2F3E46;
+margin-right: 32px;
+}
+
+#timing-and-budget p{
+  font-family: 'Fieldwork-light';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 113.53%;
+  color: #2F3E46;
+  margin-top: 6px;
+}
+
+#ingredient{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#title-ingredient{
+  font-family: "Fieldwork";
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 21px;
+color: #2F3E46;
+margin: 56px 0 24px 0;
+}
+
+.column p{
+  font-family: "Fieldwork-light";
+font-style: normal;
+font-weight: normal;
+font-size: 16px;
+line-height: 22px;
+letter-spacing: 0.035em;
+color: #2F3E46;
+margin-right: 32px;
+}
+#recipe{
+  padding-top: 56px;
+  border-right: solid 1px #52796F;
+  border-left: solid 1px #52796F;
+  padding-left: 8%;
+  animation: content-appear 0.6s ease-in-out ;
+  animation-delay: 0.32s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  padding-right: 10% ;
+  padding-bottom: 56px;
+}
+#recipe h4{
+font-family: 'MarvinVisionsBig';
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.07em;
+color: #2F3E46;
+margin-bottom: 24px;
+}
+
+#recipe P{
+font-family: 'Fieldwork-light';
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 25px;
+color: #2F3E46;
+margin-bottom: 24px;
+}
+
+#advise{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 32px 0 32px 0;
+  margin: 56px 0 56px 0;
+  border-top: solid 1px #52796F;
+  border-bottom: solid 1px #52796F;
+  margin-left: calc(8% - 18% + 2px);
+  width: calc(100vw - 13.6%);
+}
+
+#advise div:nth-child(1){
+  width: 450px;
+  margin-right: 56px;
+}
+#advise div:nth-child(1) h3{
+font-family: 'MarvinVisionsBig';
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 29px;
+letter-spacing: 0.035em;
+color: #52796F;
+margin-bottom: 16px;
+}
+
+#advise div:nth-child(1) p{
+  font-family: 'Fieldwork-light';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 25px;
+  color: #000000;
+}
+
+#advise img{
+  width: 344px;
+  height: auto;
+}
+/*End recipe-pages*/
