@@ -341,6 +341,11 @@ transform: scale(1);
 transition: all 0.4s ease-in-out;
 }
 
+.letter a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /*styling cards hover */
 
 .letter:hover {
@@ -569,4 +574,21 @@ footer a{
     font-family: 'Fieldwork-light';
     position: fixed;
   }
+}
+
+
+/*Recipe-pages*/
+
+#recipe-hero{
+  grid-column-start:2;
+  grid-row-start:2;
+}
+#recipe-information{
+  grid-column-start:2;
+  grid-row-start:2;
+}
+
+#recipe{
+  grid-column-start:2;
+  grid-row-start:3;
 }
