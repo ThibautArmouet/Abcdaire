@@ -33,6 +33,10 @@ body{
  	overflow-x:hidden;
 }
 
+a{
+  cursor:
+}
+
 
 #global-container{
 display: grid;
@@ -291,9 +295,6 @@ display: none;
   border-left: solid 1px #52796F;
 }
 
-#container_letters:hover{
-cursor: url("/sources/images/cursor_hover.png"), auto;
-}
 
 .filter {
   margin: 0 40px 0 40px;
@@ -339,11 +340,13 @@ border-radius: 20px;
 padding: 32px 38px;
 transform: scale(1);
 transition: all 0.4s ease-in-out;
+cursor: url("/sources/images/cursor_hover.png"), auto;
 }
 
 .letter a {
   text-decoration: none;
   color: inherit;
+  cursor: url("/sources/images/cursor_hover.png"), auto;
 }
 
 /*styling cards hover */
