@@ -94,6 +94,27 @@ header{
 }
 
 
+
+
+
+#container-burger svg{
+  margin-left: 300px;
+}
+#burger-menu{
+  grid-column-start:3;
+  grid-row-start:1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: solid 1px #52796F;
+  border-right: solid 1px #52796F;
+  border-bottom: solid 1px #52796F;
+}
+
+
+/*END CSS to style burger menu */
+
+
 /*END CSS to style burger menu */
 
 header h4{
@@ -382,11 +403,8 @@ color: #F6F8F5;
   text-align: right;
   line-height: 0.8;
 }
+
 /*End styling cards hover */
-/*End styling cards withs letters */
-
-
-
 
 .difficulty{
 
@@ -425,22 +443,8 @@ color: #52796F;
 }
 
 
-#container-burger svg{
-  margin-left: 300px;
-}
-#burger-menu{
-  grid-column-start:3;
-  grid-row-start:1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-top: solid 1px #52796F;
-  border-right: solid 1px #52796F;
-  border-bottom: solid 1px #52796F;
-}
+/*End styling cards withs letters */
 
-
-/*END CSS to style burger menu */
 
 header h4{
 font-family: 'Fieldwork-light';
