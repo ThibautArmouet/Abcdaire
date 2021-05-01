@@ -33,9 +33,7 @@ body{
  	overflow-x:hidden;
 }
 
-a{
-  cursor:
-}
+
 
 
 #global-container{
@@ -418,7 +416,7 @@ color: #52796F;
   font-family: 'Fieldwork';
   font-weight: 300;
   font-size: 16px;
-  color: #var(--secondary-color), 100%;
+  color: var(--secondary-color), 100%;
   display: flex;
   align-items: center;
   flex-direction:row;
