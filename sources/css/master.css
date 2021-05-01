@@ -55,6 +55,14 @@ header{
   border: solid 1px #52796F;
 }
 
+#logo{
+  align-self: center;
+  margin: auto;
+  grid-column-start:1;
+  grid-row-start:1;
+  border-bottom:solid 1px #52796F;
+  padding: 25px 16%;
+}
 /*CSS to style burger menu */
 
 #container-burger{
@@ -494,93 +502,12 @@ footer a{
 }
 
 
-@media screen and (max-width: 640px) {
-
-  #global-container{
-  display: grid;
-  grid-template-columns: 10% 80% 10%;
-  grid-auto-rows: auto;
-
-  }
-
-  #stroke-title{
-    font-family: 'MarvinVisionsBig';
-    font-size: 60px;
-    text-align: center;
-    font-variation-settings: 'opsz' 120, 'wght' 110;
-    -webkit-text-stroke: 3px #52796F;
-     -webkit-text-fill-color: var(--bg-color);
-  }
-
-  h1{
-  font-family: 'MarvinVisionsBig';
-  font-size: 60px;
-  line-height: 66px;
-  text-align: center;
-  color: var(--secondary-color);
-  font-variation-settings: 'opsz' 180, 'wght' 170;
-  letter-spacing: 0.035em;
-  animation: content-appear 0.6s ease-in-out ;
-  animation-delay: 0.32s;
-  opacity: 0;
-  animation-fill-mode: forwards;
-  }
-
-  .hero-right > img{
-
-    width : 404px;
-    height: auto;
-    flex-shrink: 3;
-    z-index: 99;
-    opacity: 0;
-    animation: content-appear 0.6s ease-in-out ;
-    animation-delay: 0.4s;
-    animation-fill-mode: forwards;
-  }
-
-  .hero-left{
-    padding-top:32px;
-    margin: auto;
-  z-index: 99;
-
-  }
-
-  #container_letters{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr)) ;
-    grid-auto-rows: 324px;
-    grid-gap: 40px;
-    width: 65VW;
-    justify-content: center;
-    align-items: center;
-    grid-column-start:2;
-    grid-row-start:5;
-    border-right: solid 1px #52796F;
-    border-left: solid 1px #52796F;
-    place-self: center;
-    padding: 80px 9%;
-
-  }
-
-
-  #satelite{
-    position: absolute;
-    left:-50px;
-    top: 248px;
-    font-family: Fieldwork;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    line-height: 25px;
-    color: #2F3E46;
-    transform: rotate(-90deg);
-    font-family: 'Fieldwork-light';
-    position: fixed;
-  }
-}
-
 
 /*Recipe-pages*/
+
+#recipe-header{
+  height: 84px;
+}
 
 #recipe-hero{
   grid-column-start:2;
@@ -819,5 +746,130 @@ margin-bottom: 16px;
   height: auto;
 }
 
+#recipe-information .like{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-start;
+}
 
 /*End recipe-pages*/
+
+@media screen and (max-width: 640px) {
+
+  #global-container{
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  grid-auto-rows: auto;
+
+  }
+  
+
+  #logo{
+    align-self: center;
+    margin: auto;
+    grid-column-start:1;
+    grid-row-start:1;
+    border-bottom:solid 1px #52796F;
+    padding: 6px 15%;
+  }
+
+  #box{
+    width:7vw;
+    height: 8vh;
+  }
+
+  #stroke-title{
+    font-family: 'MarvinVisionsBig';
+    font-size: 60px;
+    text-align: center;
+    font-variation-settings: 'opsz' 120, 'wght' 110;
+    -webkit-text-stroke: 3px #52796F;
+     -webkit-text-fill-color: var(--bg-color);
+  }
+
+  .hero-left h1{
+  font-family: 'MarvinVisionsBig';
+  font-size: 60px;
+  line-height: 66px;
+  text-align: center;
+  color: var(--secondary-color);
+  font-variation-settings: 'opsz' 180, 'wght' 170;
+  letter-spacing: 0.035em;
+  animation: content-appear 0.6s ease-in-out ;
+  animation-delay: 0.32s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  }
+
+#recipe-information h1{
+  font-family: 'MarvinVisionsBig';
+  font-size: 46px;
+  color: var(--secondary-color);
+  font-variation-settings: 'opsz' 180, 'wght' 170;
+  letter-spacing: 0.035em;
+  animation: content-appear 0.6s ease-in-out ;
+  animation-delay: 0.32s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  }
+
+#recipe-hero img{
+  width: 70vw;
+
+
+}
+
+
+  .hero-right > img{
+
+    width : 404px;
+    height: auto;
+    flex-shrink: 3;
+    z-index: 99;
+    opacity: 0;
+    animation: content-appear 0.6s ease-in-out ;
+    animation-delay: 0.4s;
+    animation-fill-mode: forwards;
+  }
+
+  .hero-left{
+    padding-top:32px;
+    margin: auto;
+  z-index: 99;
+
+  }
+
+  #container_letters{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr)) ;
+    grid-auto-rows: 324px;
+    grid-gap: 40px;
+    width: 65VW;
+    justify-content: center;
+    align-items: center;
+    grid-column-start:2;
+    grid-row-start:5;
+    border-right: solid 1px #52796F;
+    border-left: solid 1px #52796F;
+    place-self: center;
+    padding: 80px 9%;
+
+  }
+
+
+  #satelite{
+    position: absolute;
+    left:-50px;
+    top: 248px;
+    font-family: Fieldwork;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #2F3E46;
+    transform: rotate(-90deg);
+    font-family: 'Fieldwork-light';
+    position: fixed;
+  }
+}

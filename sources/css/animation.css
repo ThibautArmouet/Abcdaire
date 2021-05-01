@@ -31,3 +31,64 @@ transform: translateY(0);
     stroke-dashoffset: 0;
   }
 }
+
+.like-input{
+  width: 46px;
+  height: auto;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: scale(1);
+  transition: all 0.3s ease-in;
+}
+#like{
+  display: block;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 80px;
+  height: 71px;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+#like:checked ~ .like-input{
+fill:rgb(220, 72, 127);
+}
+#container_like{
+position: relative;
+width: 46px;
+height: auto;
+margin-right: 5%;
+}
+#container_like:hover .like-input{
+  width: 46px;
+  height: auto;
+  top: 0;
+  left: 0;
+  position: absolute;
+  transform: scale(1.05);
+}
+#like:checked ~ .like-input{
+animation: like-animation 0.4s 0s ;
+}
+@keyframes like-animation {
+  0%{
+      transform: scale(0.9);
+  }
+  50%{
+    transform: scale(1.2);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #container_like{
+  position: relative;
+  width: 46px;
+  height: auto;
+  margin-right: 15%;
+  }
+}
